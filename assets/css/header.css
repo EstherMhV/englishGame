@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: #36a9e1;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -17,12 +17,13 @@ header {
 }
 
 nav {
-    margin-right: 100px;
+    margin-right: 00px;
 
 }
 
 nav a {
-    color: #E6007E;
+    color: #ffffff;
+    font-size: larger;
     margin: 0 40px;
     text-decoration: none;
     transition: color 0.3s ease;

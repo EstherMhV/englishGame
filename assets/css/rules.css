@@ -1,16 +1,10 @@
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    position: relative;
 }
 
-header {
-    background-color: #FFFFFF;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
 main {
     padding: 20px;
@@ -20,6 +14,7 @@ main {
     margin-bottom: 20px;
 }
 
+h1,
 h2 {
     color: #E6007E;
 }
@@ -32,4 +27,21 @@ ul {
 li {
     margin-bottom: 10px;
     line-height: 1.5;
+}
+
+
+
+.lower-right-image {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    z-index: -1;
+}
+
+.upper-left-image {
+    position: absolute;
+    top: 30;
+    left: 0;
+    z-index: -1;
+
 }
