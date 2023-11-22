@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav {
+    margin-right: 100px;
+
+}
+
+nav a {
+    color: #E6007E;
+    margin: 0 40px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #F9B233;
+}
+
+nav a:active {
+    color: #008D36;
+}
