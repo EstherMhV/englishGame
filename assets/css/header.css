@@ -9,7 +9,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo img {
@@ -17,22 +16,78 @@ header {
 }
 
 nav {
-    margin-right: 00px;
-
+    display: flex;
+    align-items: center;
 }
 
-nav a {
+.menu-toggle {
+    cursor: pointer;
+    display: none; /* Cacher le menu hamburger initialement sur les écrans plus grands */
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    /* Cacher la liste des liens initialement sur les écrans plus grands */
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.nav-list li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-list a {
     color: #ffffff;
     font-size: larger;
-    margin: 0 40px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav-list a:hover {
     color: #F9B233;
 }
 
-nav a:active {
+.nav-list a:active {
     color: #008D36;
+}
+
+/* Afficher la liste des liens lorsque la classe 'show' est présente */
+.nav-list.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #36a9e1;
+    width: 100%;
+    text-align: center;
+    /* Ajouter une bordure pour séparer le menu hamburger de la liste des liens */
+    border-top: 1px solid #ffffff;
+}
+
+.nav-list.show li {
+    margin: 10px 0;
+}
+
+/* Media query pour les écrans de 600px et moins */
+@media only screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* Afficher le menu hamburger sur les petits écrans */
+    }
+
+    .nav-list {
+        display: none; /* Cacher la liste des liens sur les petits écrans initialement */
+    }
 }

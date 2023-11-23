@@ -16,60 +16,82 @@
             <img src="./assets/img/logo.png" alt="Digital Quiz Logo">
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="dice.html">Dice</a>
-            <a href="rules.html">Rules</a>
-            <a href="timer.html">Timer</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dice.html">Dice</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="timer.html">Timer</a></li>
+            </ul>
         </nav>
     </header>
     <img src="./assets/img/uppercorner.png" class="upper-left-image" />
     <main>
-        <section class="rules-section">
-            <h2>Overview</h2>
-            <p>Be the first to navigate the board by answering questions. The game includes cards with three themes and
-                multiple choice answers.</p>
-        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-        <section class="rules-section">
-            <h2>Special Spaces</h2>
-            <ul>
-                <li>Double Question: Play twice on the same space, answering two different questions.</li>
-                <li>Joker: The first player to reach this space earns a one-time-use joker for a question of their
-                    choice.</li>
-                <li>Duel: Allows a player to challenge another player of their choice, determining the theme with a dice
-                    roll.</li>
-            </ul>
-        </section>
+        <h1>Board Game Rules</h1>
 
-        <section class="rules-section">
-            <h2>Getting Started</h2>
-            <ul>
-                <li>For 2 to 4 players.</li>
-                <li>Each player chooses a token to place on the starting space.</li>
-                <li>Players take turns rolling the dice; the game starts when a player rolls a red face.</li>
-                <li>The game proceeds clockwise.</li>
-            </ul>
-        </section>
+        <p><strong>Objective:</strong> Be the first to reach the finish line by answering questions correctly.</p>
 
-        <section class="rules-section">
-            <h2>Gameplay</h2>
-            <ul>
-                <li>Question themes determined by dice roll unless the player is on a special space.</li>
-                <li>Players have 30 seconds to answer questions with provided choices.</li>
-                <li>Correct answers advance the player by one space.</li>
-                <li>Incorrect answers move the player back by one space.</li>
-                <li>Exceeding the time limit counts as an incorrect answer.</li>
-                <li>The first player to reach the finish space wins.</li>
-            </ul>
-        </section>
+        <p><strong>Components:</strong></p>
+        <ul>
+            <li>- 1 game board.</li>
+            <li>- 59 cards.</li>
+            <li>- 4 tokens.</li>
+            <li>- 1 die (available on the website).</li>
+            <li>- 1 digital timer (available on the website)</li>
+        </ul>
+
+        <p><strong>Setup:</strong></p>
+        <ul>
+            <li>- For 2 to 4 players</li>
+            <li>- Each player chooses a pawn and places it on the starting line</li>
+            <li>- Players take turns rolling the die, and the player with the highest number goes first</li>
+            <li>- The game proceeds clockwise</li>
+        </ul>
+
+        <p><strong>Gameplay:</strong></p>
+        <ul>
+            <li>- The color of the space determines the question theme (excluding special spaces)</li>
+            <li>- Players have 30 seconds to answer a question from the provided options</li>
+            <li>- Correct answers allow the player to advance one space; incorrect answers make the player move back one
+                space</li>
+            <li>- Running out of time counts as an incorrect answer</li>
+            <li>- Special spaces have unique rules (Double Question, Joker, Duel, Jump)</li>
+            <li>- The first player to reach the finish line wins</li>
+        </ul>
+
+        <p><strong>Special Spaces:</strong></p>
+        <ul>
+            <li>- Double Question: Player answers two questions; both correct moves forward, one correct moves forward
+                one space, none correct moves back one space</li>
+            <li>- Joker: Grants one-time use of a joker for a chosen question</li>
+            <li>- Duel: Player challenges another; first to answer correctly moves forward, other moves back</li>
+            <li>- Jump: Skips one space without a question</li>
+        </ul>
 
     </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
         <p class="app-name">English Game</p>
         <p>&copy; 2023. All rights reserved.</p>
         <img src="./assets/img/lowercorner.png" class="lower-right-image" />
     </footer>
-    
+    <script src="assets\js\header.js"></script>
 </body>
 
 </html>

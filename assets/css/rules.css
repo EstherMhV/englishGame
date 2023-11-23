@@ -24,9 +24,8 @@ ul {
     padding: 0;
 }
 
-li {
-    margin-bottom: 10px;
-    line-height: 1.5;
+ul li {
+    margin-bottom: 8px;
 }
 
 
@@ -41,7 +40,7 @@ li {
 .upper-left-image {
     position: absolute;
     top: 30;
+    /* Add "px" here */
     left: 0;
     z-index: -1;
-
 }

@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cube.style.transform = 'rotateX(' + xRand + 'deg) rotateY(' + yRand + 'deg)';
 
-
   };
 
   function getRandom(max, min) {
