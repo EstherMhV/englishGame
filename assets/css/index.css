@@ -1,3 +1,31 @@
 img {
     max-width: 300px;
 }
+
+.rules-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    max-height: 200px; /* Set a maximum height for the image */
+    height: auto;
+}
+
+.lower-right-image {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    z-index: -1;
+}
+
+.upper-left-image {
+    position: absolute;
+    top: 30;
+    left: 0;
+    z-index: -1;
+}
