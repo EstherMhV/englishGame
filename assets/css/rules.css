@@ -1,13 +1,12 @@
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 
-
 main {
-    padding: 20px;
+    padding: 100px;
 }
 
 .rules-section {
@@ -17,6 +16,7 @@ main {
 h1,
 h2 {
     color: #E6007E;
+    text-align: center;
 }
 
 ul {
@@ -24,10 +24,26 @@ ul {
     padding: 0;
 }
 
+ul div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+ul img {
+    margin-right: 10px;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+}
+
 ul li {
     margin-bottom: 8px;
 }
 
+strong {
+    color: #36a9e1;
+}
 
 
 .lower-right-image {
@@ -40,7 +56,6 @@ ul li {
 .upper-left-image {
     position: absolute;
     top: 30;
-    /* Add "px" here */
     left: 0;
     z-index: -1;
 }

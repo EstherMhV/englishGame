@@ -12,7 +12,7 @@ header {
 }
 
 .logo img {
-    max-height: 50px;
+    max-width: 200px;
 }
 
 nav {
@@ -22,7 +22,8 @@ nav {
 
 .menu-toggle {
     cursor: pointer;
-    display: none; /* Cacher le menu hamburger initialement sur les écrans plus grands */
+    display: none;
+    /* Cacher le menu hamburger initialement sur les écrans plus grands */
 }
 
 .menu-toggle span {
@@ -37,6 +38,7 @@ nav {
 .nav-list {
     list-style-type: none;
     display: flex;
+
     /* Cacher la liste des liens initialement sur les écrans plus grands */
     @media only screen and (max-width: 600px) {
         display: none;
@@ -84,10 +86,12 @@ nav {
 /* Media query pour les écrans de 600px et moins */
 @media only screen and (max-width: 600px) {
     .menu-toggle {
-        display: block; /* Afficher le menu hamburger sur les petits écrans */
+        display: block;
+        /* Afficher le menu hamburger sur les petits écrans */
     }
 
     .nav-list {
-        display: none; /* Cacher la liste des liens sur les petits écrans initialement */
+        display: none;
+        /* Cacher la liste des liens sur les petits écrans initialement */
     }
 }
